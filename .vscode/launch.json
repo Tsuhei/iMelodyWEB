@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MelodiasApplication<melodias>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.melodias.melodias.MelodiasApplication",
+            "projectName": "melodias",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

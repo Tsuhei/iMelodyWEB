@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Stick No Bills';
+}
+
+.container-songs {
+    padding: 40px 0;
+    width: 90%;    
+    height: 90%;
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.title {
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9d43;
+    background: -webkit-linear-gradient(to right, hsla(271, 98%, 22%, 0.617), rgba(26, 4, 72, 0.419)), url(../media/Image/Dj\ -\ 1258.mp4);
+    background: linear-gradient(to right, hsla(271, 98%, 20%, 0.515), hsla(268, 95%, 8%, 0.93)), url(../media/Image/Dj\ -\ 1258.mp4);
+    background-size:contain;
+    background-attachment: fixed;
+    position: relative;
+}
+video {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+
+nav {
+    text-align: center;
+    padding: 30px 50px 0 0;
+    font-size: 25px;
+}
+
+nav > a {
+    color:rgb(242, 242, 242);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .text-header {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-header h1{
+    font-size: 100px;
+    color:#fff;
+}
+
+.text-header h2 {
+    font-size: 50px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header #logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+header #logo img{
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+/*catalogo*/
+
+.songs {
+    background-image: linear-gradient(0deg, rgb(68, 157, 214) 0%, rgba(140,82,255,255) 100%);
+    }
+    
+.port-songs {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-song {
+    width: 100%;
+    margin-bottom:20px;
+    overflow:hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.img-song > img {
+    width: 100%;
+    height: 200px;
+    object-fit:fill;
+    display: block;
+    
+}
+
+
+.hover-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #6626d58a;
+    transition: transform .6s;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-text img {
+    width: 100px;
+}
+
+.hover-text p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+}
+
+.img-song:hover .hover-text {
+    transform: scale(1);
+}
+
+/*Footer*/
+
+footer{
+    background: #449dd6;
+    padding: 10px 0 0 0;
+    margin:auto;
+    overflow:hidden;
+    z-index: 0;
+}
+
+
+.container-socialmedia{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-evenly;
+    margin:auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+#social-media img{
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+.title-final h3{
+    text-align: center;
+    font-size: 50px;
+    margin: 10px 0 10px 0;
+    color: #ffffff;
+}
+
+.title-final img{
+    width: 100px;
+}
+
+
+

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Stick No Bills';
+}
+
+
+.title {
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9d43;
+    background: -webkit-linear-gradient(to right, hsla(271, 98%, 22%, 0.617), rgba(26, 4, 72, 0.419)), url(../media/Image/Dj\ -\ 1258.mp4);
+    background: linear-gradient(to right, hsla(271, 98%, 20%, 0.515), hsla(268, 95%, 8%, 0.93)), url(../media/Image/Dj\ -\ 1258.mp4);
+    background-size:contain;
+    background-attachment: fixed;
+    position: relative;
+}
+video {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+
+nav {
+    text-align: center;
+    padding: 30px 50px 0 0;
+    font-size: 25px;
+}
+
+nav > a {
+    color:rgb(255, 255, 255);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .text-header {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-header h1{
+    font-size: 100px;
+    color:#fff;
+}
+
+.text-header h2 {
+    font-size: 50px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+header #logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+header #logo img{
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+
+
+.main {
+    position: relative;
+    height: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main button {
+    padding: 12px 12px;
+    margin: 30px 10px;
+}
+
+
+
+
+/*Reproductor*/
+
+.container{
+    background-image: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgba(140,82,255,255) 100%);   
+    height: 95%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+/*Info*/
+
+.container #nombre {
+    position:absolute;
+    top: 150px;
+    left: 550px;
+    width: 700px;
+    text-align: left;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 45px;
+}
+
+.container #artista {
+    position: absolute;
+    top: 200px;
+    left: 560px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+/*Imagen de Cancion*/
+.container img {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px 15px #6626d58a;
+    left: -350px;
+}
+
+
+  /*barra de duracion */
+.container .duration {
+    position:absolute;
+    top: 300px;
+    left: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.container .duration p {
+    color: rgb(255, 249, 249);
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+/*Autoplay*/
+.container #auto {
+    position: relative;
+    top: -390px;
+    left: 220px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 45px;
+    border: none;
+    padding: 10px 14px;
+    color: rgb(255, 255, 255);
+    background: #6626d58a;
+    outline: none;
+    border-radius: 50px;
+}
+
+  /* rango del progreso de cancion y volumen */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    outline: none;
+    height: 2px;
+    margin: 0 15px;
+    background: #6626d550;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #6626d5b0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container input[type="range"] {
+    width: 20%;
+
+}
+
+/*Botones*/
+.container .btns {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.container .btns button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    background: #6626d595;
+    position: relative;
+    top:-200px;
+    left: 70px;
+}
+
+#play {
+    background: #6626d58a;
+}
+.container button:hover {
+    background: #6626d5cb;
+}
+
+.container i:before {
+    color: rgba(255, 255, 255, 0.81);
+    font-size: 20px;
+}
+
+  /*volumen */
+.container .volume {
+    position: relative;
+    top: -310px;
+    left: 90px;
+    width: 82%;
+    height: 50px;
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.container .volume p {
+    font-size: 15px;
+}
+.container .volume i {
+    cursor: pointer;
+    padding: 8px 8px;
+    background: #6626d58a;
+}
+.container .volume i:hover {
+    background: #5d02fa8a;
+}
+.volume #volume_show {
+    padding: 7px 15px;
+    margin: 5px 5px;
+    background: #6626d58a;
+}
+
+/*Contador de canciones*/
+.container .show_song_no {
+    position: absolute;
+    top: 250px;
+    left: 550px;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content:center;
+    /*padding: 10px 10px;*/
+    color: #fff;
+    border-radius: 5px;
+    background: #6626d58a;
+}
+.container .show_song_no p:nth-child(2) {
+    margin: 0 5px;
+
+}
+
+/*Footer*/
+
+footer{
+    background: rgba(34,193,195);
+    padding: 20px 0 0 0;
+    margin: auto;
+    overflow: hidden;
+    z-index: 0;
+}
+
+
+.container-socialmedia{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-evenly;
+    margin:auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+#social-media img{
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+.title-final h3{
+    text-align: center;
+    font-size: 60px;
+    margin: 10px 0 10px 0;
+    color: #ffffff;
+}
+
+.title-final img{
+    width: 100px;
+}
+
+
+

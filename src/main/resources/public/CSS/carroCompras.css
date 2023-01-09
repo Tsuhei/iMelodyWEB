@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagen{
+    max-width:100%;
+}
+
+nav{
+    background: rgba(140,82,255);
+}
+a{
+    cursor:pointer;
+}
+.alerta{
+    font-weight:700;
+}
+body{
+    background-image: linear-gradient(0deg, rgba(34,193,195) 0%, rgba(140,82,255,255) 100%);
+    overflow-x: hidden;
+    font-family: 'Stick No Bills';
+}
+
+main {
+    margin: auto;
+}
+
+.mt-5 {
+    justify-content:space-evenly;
+}
+
+
+.modal-contenedor{
+    display:flex;
+    align-items: center;
+    gap:2rem;
+}
+.img-carrito{
+    width:200px;
+    padding: 20px;
+} 
+.modal-content{
+    background-color: rgb(255, 255, 255);
+}
+.parrafo{
+    font-weight: 900;
+    font-style: italic;
+}
+#precioTotal{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.boton{
+    opacity:0;
+}
+
+footer{
+    background: rgba(34,193,195);
+    padding: 10px 0 0 0;
+    margin:auto;
+    overflow:hidden;
+    z-index: 0;
+}
+
+
+.container-socialmedia{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-evenly;
+    margin:auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+#social-media img{
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+.title-final h3{
+    text-align: center;
+    font-size: 50px;
+    margin: 10px 0 10px 0;
+    color: #ffffff;
+}
+
+.title-final img{
+    width: 100px;
+}
