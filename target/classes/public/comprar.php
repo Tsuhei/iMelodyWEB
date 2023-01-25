@@ -52,13 +52,13 @@
                             <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
                             <div class="col-12 col-md-10">
                                 <input type="text" class="form-control" id="cliente"
-                                    placeholder="Ingresa nombre cliente" name="persona">
+                                    placeholder="Ingresa tu nombre" name="destinatario">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
                             <div class="col-12 col-md-10">
-                            <input type="text"  id="correo" class="form-control"  name="email.id" id="email.id">
+                            <input type="text"  id="correo" class="form-control" placeholder="Ingresa tu correo" name="cc_to" id="email.id">
                             </div>
                         </div>
 
@@ -119,6 +119,8 @@
     <script src="js/carrosCompras.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('dA_WepG-3PFd4akcv')</script>
 
 
 </html>

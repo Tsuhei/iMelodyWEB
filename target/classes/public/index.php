@@ -25,10 +25,8 @@
     <nav>   
         <p id="logo"><img src="media/Icon/iMLogo.png"></p>
         <a href= "#start">Inicio</a>
-        <a href= "#reproductor">Reproductor</a>
         <a href= "#songs">Catálogo</a>
-        <a href= "#socialmedia">Redes Sociales</a>        
-        <a href= "carro/modalidad.html" target="_blank">Carrito</a>
+        <a href= "#social-media">Redes Sociales</a>        
         <a href= "login.php" target="_blank">Iniciar sesión</a>
     </nav>
     <section class= "text-header" id ="start">
